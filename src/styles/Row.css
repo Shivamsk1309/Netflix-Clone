@@ -1,0 +1,53 @@
+
+
+.row {
+  margin-left: 5px;
+}
+
+.row-posters {
+  display: flex;
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+  scrollbar-width: none; /* Hide the default scrollbar in Firefox */
+  overflow-y: hidden;
+  padding: 15px;
+}
+
+.row-posters::-webkit-scrollbar {
+  display: none; /* Hide the default scrollbar in WebKit browsers */
+}
+
+.poster {
+  object-fit: contain;
+  max-height: 250px;
+  width: 100%;
+  border-radius: 5%;
+  transition: transform 450ms;
+  cursor: pointer; 
+  margin-right: 20px;
+}
+
+.poster:hover {
+  transform: scale(1.07);
+}
+
+.title{
+  font-size: 30px;
+  margin-left: 15px;
+  margin-top: 50px;
+  color: #e6e6e6;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.posterLarge{
+   object-fit: contain;
+  max-height: 380px;
+  width: 100%;
+  border-radius: 5%;
+  transition: transform 450ms;
+  cursor: pointer;
+  margin-right: 18px;
+}
+.posterLarge:hover {
+  transform: scale(1.09);
+}
